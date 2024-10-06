@@ -12,9 +12,9 @@ def send_email(email):
     try:
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        server.login("bogyt09@gmail.com", "Bogy2018!") 
+        server.login("1111111", "11111111") 
         message = f"Subject: Landsat Data Notification\n\nIt's time for the Landsat data update!"
-        server.sendmail("bogyt09@gmail.com", email, message)
+        server.sendmail("111111111", email, message)
         server.quit()
         print(f"Notification sent to {email}")
     except Exception as e:
